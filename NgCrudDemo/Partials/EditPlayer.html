@@ -1,0 +1,30 @@
+﻿<div class="container">
+    <h3>Edit Player</h3>
+    {{message}}
+
+    <form name="UpdatePlayerForm" ng-submit="UpdatePlayer();" class="form-group-sm">
+        <div class="form-group">
+            <label for="player.Name">Name</label>
+            <input type="text" class="form-control" ng-model="player.Name" required />
+        </div>
+        <div class="form-group">
+            <label for="player.Club">Club</label>
+            <input type="text" class="form-control" ng-model="player.Club" required />
+        </div>
+        <div class="form-group">
+            <label for="player.Country">Country</label>
+            <input type="text" class="form-control" ng-model="player.Country" required />
+        </div>
+        <div class="form-group">
+            <label for="player.Age">Age</label>
+            <input type="text" class="form-control" ng-model="player.Age" required />
+        </div>
+        <div class="form-group">
+            <input type="submit" class="btn btn-success" value="Update" ng-disabled="UpdatePlayerForm.$invalid" />
+        </div>
+
+    </form>
+
+    <br />
+    <a href="#" class="btn btn-primary">Back to Main</a>
+</div>
