@@ -1,4 +1,4 @@
-﻿<div class="container">
+﻿<div class="">
     <h3>List of Players</h3>
     {{message}}
     <br />
@@ -30,7 +30,7 @@
             <tr ng-repeat="player in players">
                 <td><b>{{$index+1}}</b></td>
                 <!--<td>{{player.PlayerId}}</td>-->
-                <td><input type="text" class="form-control input-sm" ng-model="player.Name" /></td>
+                <td><input type="text" class="form-control input-sm" ng-model="player.Name"/></td>
                 <td><input type="text" class="form-control input-sm" ng-model="player.Club" /></td>
                 <td><input type="text" class="form-control input-sm" ng-model="player.Country" /></td>
                 <td><input type="text" class="form-control input-sm" ng-model="player.Age" /></td>
